@@ -1,0 +1,19 @@
+#box-div-outer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#box-div-inner {
+    position: absolute;
+    border: 5px;
+    top: 5%;
+    left: 10%;
+    width: 20px;
+    height: 5px;
+    border-color: blue;
+}
+
+#img-doc {
+    width: 100%;
+}

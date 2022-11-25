@@ -1,0 +1,34 @@
+{% extends 'docform/layout.html' %}
+
+{% block body %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h1>Upload your document here!</h1>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="fileType" id="fileType1" value="image" checked>
+                                <label class="form-check-label" for="fileType1">
+                                Image
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="fileType" id="fileType2" value="pdf">
+                                <label class="form-check-label" for="fileType2">
+                                PDF
+                                </label>
+                            </div>
+                                <label class="form-label" for="customFile">Default file input example</label>
+                                <input type="file" class="form-control" id="customFile">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+{% endblock body %}

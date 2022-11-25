@@ -1,0 +1,65 @@
+{% extends 'docform/layout.html' %}
+
+{% block loadcss %}
+{% load static %}
+<link href="{% static 'docform/style.css'%}" rel="stylesheet">
+{% endblock loadcss %}
+
+
+
+{% block body %}
+<div class="container">
+    <div class="row">
+            <div class="col-6">
+                <div id="box-div-outer">
+                    {% load static %}
+                    <img id="img-doc" src="{% static "docform/img1.jpg" %}" alt="cat pic">
+                    <div id="box-div-inner"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <form method="post" id="docform">
+                    {% csrf_token %}
+                    <h3>Form</h3>
+                </div>
+            </form>
+            <button onClick="addText()" class="btn btn-primary" id="text-button">Add a Text field</button>
+        </div>
+    </div>
+</div>
+
+{% load static %}
+<script>
+
+    var count = 0;
+    addText = () => {
+        //e.preventDefault();
+    
+        //console.log('11')
+        form = document.getElementById('docform');
+        //console.log(form);
+        var newdiv = document.createElement('div');
+        //console.log(newdiv);
+        newdiv.classList.add("form-group");
+        var newkey = document.createElement('input')
+        //console.log(newkey);
+        newkey.type = "text";
+        newkey.classList.add("form-control");
+        //console.log(newkey);
+        newdiv.appendChild(newkey);
+        var newvalue = document.createElement('input');
+        //console.log(newvalue);
+        newvalue.type = "text";
+        newvalue.classList.add("form-control");
+        newdiv.appendChild(newvalue);
+        //console.log(newdiv)
+        form.appendChild(newdiv);
+        //console.log(form);
+    }
+    let btn = document.getElementById('text-button');
+    btn.addEventListener("click", addText);
+
+
+
+</script>
+{% endblock %}
