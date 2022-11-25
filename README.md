@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Scenario -  Data Extraction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create an application that will do below
 
-## Available Scripts
+## Data Extractor 
 
-In the project directory, you can run:
++ Sign-in to the app
++ Allow for documents (JPG, PNG, PDF) to be uploaded into the system.
++ Have a document viewer embedded into the application.
++ Have a dynamic webform that can be extended for any number of fields. 
++ The webform should be able to take a key and value for each element. 
++ Have a side-by-side view of document and the dynamic form [***Key Feature***]
++ Have an option to snip and extract the key and value fields from the document page currently being viewed [***Key Feature***]
++ The form should be a clickable form, and on click of the extracted data in the form, the position from where the data was extracted should be highlighted in the document.
++ Have ability to traverse through multiple pages in the document, and change the form data according to the data being viewed. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Other Guidelines
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Input Data
++ Refer to the below path in repo for sample data
+       - data
+### Recommended Folder Structure
+        - app_ui (for the UI files)
+        - app (for the backend files)
+        - presentation (to place working demo videos and presentation explaining the architecture of the app)
 
-### `npm test`
+### Steps to submit the code
++ Fork the repo to your team's git repo.
++ Create a branch with your team name.
++ You can make the changes to your branch locally.
++ Create a file called TestMe.md and mention  how to start the app and if any dependencies have to be downloaded to run the app locally
++ Do not push the branch to the STG repo till instructed.
++ At the end of the event, you can push your branch into the STG repo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***Try not to use firebase or any internet provided services for creating or running the apps***
